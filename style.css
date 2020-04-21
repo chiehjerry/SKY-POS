@@ -1,0 +1,71 @@
+/*放上背景圖和把全部水平垂直置中*/
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:url(images/foodbg-1.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/*放上背景圖和把全部水平垂直置中*/
+/* 背景 */
+.container {
+  background-color: rgba(0,0,0,0.85);
+  border-radius: 3px;
+}
+/* 背景 */
+
+/* 右邊菜單 */
+.menu .card-body {
+  cursor: pointer;
+}
+
+.menu .card:hover {
+  box-shadow: 0px 0px 10px 1px rgba(255,255,255,0.5)
+}
+/* 右邊菜單 */
+
+
+.row {
+  max-height: 600px;
+}
+
+.col-md-4 {
+  max-height: 580px; /* 加入高度限制,否則會產生溢位 */
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+/* 捲軸調整 */
+
+/* 整個捲軸 */
+::-webkit-scrollbar { width: 15px; }
+/* 捲軸的軌道 */
+::-webkit-scrollbar-track { background: #fff; }
+/*捲軸尚未滑到的軌道*/
+::-webkit-scrollbar-track-piece{ background: #fff; }
+/* 滑動的區塊 */
+::-webkit-scrollbar-thumb { background: rgb(144, 235, 241); }
+/* 滑鼠移到滑動的區塊上 */
+::-webkit-scrollbar-thumb:hover { background: #aaa; }
+/* 捲軸調整 */
+
+.card-title {
+    font-weight:bold;
+}
+
+/* 左邊刪除鍵效果 */
+
+[data-pos="delete-drink"] {
+  
+color: #999;
+cursor: pointer;
+
+}
+
+[data-pos="delete-drink"]:hover {
+  color: #333;
+}
+
+/* 左邊刪除鍵效果 */
