@@ -146,7 +146,7 @@ orderLists.addEventListener('click', function (event) {
 const checkoutButton = document.querySelector('[data-pos="checkout"]')
 checkoutButton.addEventListener('click', function () {
   // 1. 計算訂單總金額
-  alert(`Total amount of drinks：$${pos.checkout()}`)
+  alert(`Total amount of product：$${pos.checkout()}`)
   // 2. 清空訂單
   pos.clearOrder(orderLists)
 })
